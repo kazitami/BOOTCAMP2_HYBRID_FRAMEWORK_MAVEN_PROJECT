@@ -4,8 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.TN.Listeners.MyListeners;
 import com.TN.Pages.AccountSuccessPage;
 import com.TN.Pages.HomePage;
 import com.TN.Pages.LoginPage;
@@ -13,7 +15,7 @@ import com.TN.Pages.RegisterPage;
 import com.TN.TestBase.TestBase;
 import com.TN.TestData.ExcelCode;
 import com.TN.Utilities.Util;
-
+@Listeners(MyListeners.class)
 public class RegisterTest extends TestBase {
 
 	public RegisterTest() throws Exception {

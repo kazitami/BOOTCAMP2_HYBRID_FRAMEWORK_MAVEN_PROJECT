@@ -4,12 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.TN.Listeners.MyListeners;
 import com.TN.Pages.HomePage;
 import com.TN.Pages.ProductPage;
 import com.TN.TestBase.TestBase;
-
+@Listeners(MyListeners.class)
 public class SearchProductTest extends TestBase {
 
 	public SearchProductTest() throws Exception {

@@ -92,8 +92,6 @@ public class MyListeners implements ITestListener{
 			e.printStackTrace();
 		}
 		
-		
-		
 	}
 
 }
